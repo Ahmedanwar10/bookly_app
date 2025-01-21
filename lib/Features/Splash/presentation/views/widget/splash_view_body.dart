@@ -60,7 +60,7 @@ class _SplashViewBodyState extends State<SplashViewBody>with SingleTickerProvide
 
   void navigationHome() {
      Future.delayed(const Duration(seconds: 3),(){
-   Get.to(()=>const HomeView(),transition: Transition.fade,duration: kTransition);    
+   Get.to(()=>const HomeView(),transition: Transition.fade,duration: kTransitionDuration);    
    
    });
  }

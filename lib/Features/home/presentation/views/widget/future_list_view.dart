@@ -1,6 +1,5 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/custom_list_view_item.dart';
 import 'package:flutter/material.dart';
-
 class FutureListView extends StatelessWidget {
   const FutureListView({super.key});
 

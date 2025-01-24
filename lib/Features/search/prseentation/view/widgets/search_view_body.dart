@@ -16,7 +16,7 @@ class SearchViewBody extends StatelessWidget {
           CustomSearchTextField(),
           SizedBox(height: 16,),
           Text(
-                  "Search result",
+                  "Search Result",
                   style: Styles.textStyle18,
                 ),
           SizedBox(height: 6,),   

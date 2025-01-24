@@ -11,26 +11,27 @@ class CustomSearchTextField extends StatelessWidget {
         enabledBorder: buildOutLineInputBorder(),
         focusedBorder: buildOutLineInputBorder(),
         hintText: "Search",
-        suffixIcon: IconButton(onPressed: (){}, 
-        icon:const Opacity(
-          opacity: 0.8,
-          child: Icon(
-           FontAwesomeIcons.magnifyingGlass,
-            size: 24,
-           ),
+        suffixIcon: IconButton(
+          onPressed: () {},
+          icon: const Opacity(
+            opacity: 0.8,
+            child: Icon(
+              FontAwesomeIcons.magnifyingGlass,
+              size: 24,
+            ),
+          ),
         ),
-         ),
-      
       ),
     );
   }
 
   OutlineInputBorder buildOutLineInputBorder() {
     return OutlineInputBorder(
-        borderSide:const BorderSide(
+        borderSide: const BorderSide(
           color: Colors.white,
         ),
-        borderRadius: BorderRadius.circular(12,)
-      );
+        borderRadius: BorderRadius.circular(
+          12,
+        ));
   }
 }

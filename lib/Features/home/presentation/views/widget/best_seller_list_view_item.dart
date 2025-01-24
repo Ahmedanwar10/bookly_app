@@ -12,7 +12,7 @@ class BookSellerListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         GoRouter.of(context).push(AppRouter.KBookDetailsView);
       },
       child: SizedBox(
@@ -26,49 +26,58 @@ class BookSellerListViewItem extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.black,
                   image: const DecorationImage(
-                      fit: BoxFit.fill,
-                       image: AssetImage(AssetsData.test2)),
+                      fit: BoxFit.fill, image: AssetImage(AssetsData.test2)),
                 ),
               ),
             ),
-            const SizedBox(width: 30,),
-             Expanded(
-               child: Column(
-                children:  [
+            const SizedBox(
+              width: 30,
+            ),
+            Expanded(
+              child: Column(
+                children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width*0.5,
-                    child:  Text('Harry Potter and the Goblet of Fire',
-                    style:Styles.textStyle20.copyWith(fontFamily: kGtSpectraFine) ,
-                    maxLines: 2,
-                    overflow: TextOverflow.clip,
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Text(
+                      'Harry Potter and the Goblet of Fire',
+                      style: Styles.textStyle20
+                          .copyWith(fontFamily: kGtSpectraFine),
+                      maxLines: 2,
+                      overflow: TextOverflow.clip,
                     ),
-                    ),
-                  const SizedBox(height: 3,),
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width*0.5,
-                    child: const Text('J.K. Rowling',
-                    style:Styles.textStyle14 ,
-                    maxLines: 1,
-                    overflow: TextOverflow.clip,
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: const Text(
+                      'J.K. Rowling',
+                      style: Styles.textStyle14,
+                      maxLines: 1,
+                      overflow: TextOverflow.clip,
                     ),
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Row(
+                      children: [
+                        Text(
+                          "19.99 €",
+                          style: Styles.textStyle20
+                              .copyWith(fontWeight: FontWeight.bold),
+                        ),
+                        const Spacer(),
+                        const BookRating(),
+                      ],
                     ),
-                  const SizedBox(height: 3,),
-                    SizedBox(
-                       width: MediaQuery.of(context).size.width*0.5, 
-                      child:  Row(
-                        children:[
-                          Text(
-                            "19.99 €",style: Styles.textStyle20
-                            .copyWith(fontWeight: FontWeight.bold),
-                          ),
-                           const Spacer(),
-                           const BookRating(),
-                        ],
-                      ),
-                    )
+                  )
                 ],
-                         ),
-             ),
+              ),
+            ),
           ],
         ),
       ),

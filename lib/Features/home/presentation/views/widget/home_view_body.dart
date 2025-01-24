@@ -16,7 +16,7 @@ class HomeViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.symmetric(horizontal:  30.0),
+                padding: EdgeInsets.symmetric(horizontal: 30.0),
                 child: CustomAppBarWidget(),
               ),
               FutureListView(),
@@ -28,21 +28,19 @@ class HomeViewBody extends StatelessWidget {
                   style: Styles.textStyle18,
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
             ],
           ),
-      ),
-       SliverFillRemaining(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30.0),
-          child: BestSellerListView(),
         ),
-      ),
+        SliverFillRemaining(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 30.0),
+            child: BestSellerListView(),
+          ),
+        ),
       ],
     );
-    
   }
 }
-
-
-

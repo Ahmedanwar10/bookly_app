@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "Bookly"
-    ]
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    }
 }

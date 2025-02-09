@@ -1,4 +1,3 @@
-import 'package:bookly_app/Features/home/presentation/views/widget/best_seller_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class SearchResultListView extends StatelessWidget {
@@ -12,8 +11,8 @@ class SearchResultListView extends StatelessWidget {
         padding: EdgeInsets.zero,
         itemCount: 10,
         itemBuilder: (context, index) {
-          return  Padding(
-            padding:const EdgeInsets.symmetric(vertical: 10),
+          return  const Padding(
+            padding:EdgeInsets.symmetric(vertical: 10),
             child: //BookSellerListViewItem(bookModel: state.books[index],),
             Text('search')
           );

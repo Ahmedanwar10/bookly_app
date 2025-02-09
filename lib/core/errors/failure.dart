@@ -11,7 +11,7 @@ class ServerFailure extends Failure{
 
 
 
-  factory ServerFailure.fromDioError(DioError dioError)
+  factory ServerFailure.fromDioError(DioException dioError)
   {
     switch(dioError.type){
       
